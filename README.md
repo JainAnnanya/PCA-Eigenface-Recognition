@@ -33,7 +33,12 @@ Face recognition often deals with high-dimensional data (e.g., 256×256 pixel im
 
 ### 4. **Reconstruction Error Analysis**
 - Compute the reconstruction error:
-  \[ \frac{||\hat{Y} - Y||^2}{N} \]
+  
+  $$ \frac{\|\hat{Y} - Y\|^2}{N} $$
+  where:
+    - \( \hat{Y} \) is the reconstructed image.
+    - \( Y \) is the original image.
+    - \( N \) is the total number of pixels.
 - Test with different values of **K** (10, 30, 50, 100, 150).
 - Plot error vs. number of Eigenfaces.
 
